@@ -1,0 +1,15 @@
+{
+  "name": "cakeshop",
+  "version": "1.0.0",
+  "private": true,
+  "main": "app.js",
+  "author": "Andres Saldaña Aguilar",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.14",
+    "mongoose-unique-validator": "^2.0.3"
+  }
+}
