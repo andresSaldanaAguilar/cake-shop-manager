@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "724d8ce2-3b12-40d1-b323-5b0d7c65ddbb",
+		"name": "Cake-Shop Collection",
+		"description": "CRUD operations for cake management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cakes",
+			"item": [
+				{
+					"name": "list-cakes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/cakes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"cakes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-cake-by-name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/cakes?name=Cat Cake",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"cakes"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Cat Cake"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save-cake",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"flavors\": [\r\n        \"fish\"\r\n    ],\r\n    \"name\": \"Cat Cake\",\r\n    \"price\": 9.99\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/cakes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"cakes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-cake-by-name",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/cakes?name=Cat Cake",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"cakes"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Cat Cake"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-cake",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"flavors\": [\r\n        \"steak\"\r\n    ],\r\n    \"name\": \"Surprise Cake\",\r\n    \"price\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/cakes?name=Cat Cake",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"cakes"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Cat Cake"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

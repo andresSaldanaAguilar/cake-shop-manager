@@ -11,7 +11,7 @@ router.get('/', function (req, res) {
   else{
       Cake.find()
       .then(items => res.send(items))
-      .catch(err => res.status(404).json({ msg: 'No items found' }));
+      .catch(err => res.status(404).json({ msg: 'Item not found' }));
   }
 });
 
